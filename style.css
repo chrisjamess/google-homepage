@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #FFF;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 155px 0 0 0 ;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0 0 15px;
+    font-size: 13px;
+    color: rgb(61, 61, 61);
+    }
+
+li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+a {
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+
+p {
+ font-size: 12px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 5px 0 0 0;
+}
+
+p span {
+    color: red;
+}
+
+.searchbar {
+    display: block;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+input[type=text] {
+    width: 500px;
+    font-size: 14px;
+    padding: 10px;
+    margin: 15px 15px;
+    border-radius: 50px;
+    border-style: solid 1px;
+    -webkit-appearance: none;
+}
+
+button {
+    appearance:none;
+    padding:8px 0 8px 0;
+    border:none;
+    background-color:#f8f8f8;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    text-decoration: none;
+    border-radius:5px;
+    width:175px;
+}
+
+.button1 {
+    margin: 0 3px 0 0;
+}
+
+.button2 {
+    margin: 0 0 0 3px;
+}
+ 
+.pageContent {
+    min-height: 100%;
+
+    /* negative is same as footer height */
+    margin-bottom: 0;
+}
+
+/* psuedo classes */ 
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    height: 50px;
+    background: #f8f8f8;
+    border-top: 1px solid rgb(37, 37, 37, 10%);
+}
+
+footer, li {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footRight {
+    float:right;
+    padding-right: 30px;
+}
