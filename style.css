@@ -15,13 +15,15 @@ body {
 img {
     display: block;
     margin: auto;
-    padding: 155px 0 0 0 ;
+    /* max-width: 300px;
+    height: auto; */
+    padding: 200px 0 0 100px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 15px 0 0 15px;
+    padding: 15px 10px 0 15px;
     font-size: 13px;
     color: rgb(61, 61, 61);
     }
@@ -58,9 +60,10 @@ input[type=text] {
     width: 500px;
     font-size: 14px;
     padding: 10px;
-    margin: 15px 15px;
+    margin: 15px 15px 25px 15px;
     border-radius: 50px;
-    border-style: solid 1px;
+    border: solid 1px lightgray;
+    outline:none;
     -webkit-appearance: none;
 }
 
@@ -85,19 +88,23 @@ button {
 }
  
 .pageContent {
-    min-height: 100%;
+    min-height: 97%;
 
     /* negative is same as footer height */
-    margin-bottom: 0;
+    margin-bottom: -50px;
 }
 
+.page-content::after {
+    content: "";
+    display: block;
+}
 /* psuedo classes */ 
 
 a:hover {
     text-decoration: underline;
 }
 
-footer {
+footer, .page-content::after {
     height: 50px;
     background: #f8f8f8;
     border-top: 1px solid rgb(37, 37, 37, 10%);
